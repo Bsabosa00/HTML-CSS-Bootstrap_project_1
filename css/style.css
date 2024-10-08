@@ -1,0 +1,108 @@
+:root{
+--main-color: #ff206e ;
+}
+/* start vavbar */
+.nav-item .nav-link{
+    color: white;
+    transition: 0.5s all;
+}
+.nav-item .nav-link.active{
+    color: var(--main-color);
+}
+.nav-item .nav-link:focus, .nav-link:hover{
+color: var(--main-color);
+}
+/* end navbar */
+
+#header{
+    background-image: url("../images/bg_osaka.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+#header a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.icon:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: var(--main-color);
+}
+/* start about */
+#about{
+    background-image:url("../images/light_dot.jpg") ;
+    background-position: center;
+}
+.title-header h2{
+    font-size: 4rem;
+    color: #f1f1f1;
+    letter-spacing: 15px;
+}
+.title-header h3::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+}
+#about .lead{
+color: var(--main-color);
+}
+/* start services */
+#services{
+    background-image: url("../images/dark_dot.jpg");
+}
+#services h2::after{
+    content: "";
+    position: absolute;
+    width:30% ;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s all;
+}
+#services .services-content:hover h2::after{
+    width: 60%;
+}
+/* start caroser */
+#slider .slider-img{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+}
+#slider .carousel-indicators [data-bs-target]{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+text-indent: 0;
+}
+#slider{
+    margin-top: 50px;
+    height: 45vh;
+}
+#tabs .nav-tabs .nav-item.show .nav-link,
+#tabs .nav-tabs .nav-link.active {
+border: none;
+color: var(--main-color);
+}
+#tabs .nav-tabs .nav-link{
+    border: none;
+    color: gray;
+}
+#tabs .nav-tabs{
+    border: none;
+}
+
